@@ -1,189 +1,181 @@
-Smart Traffic & Parking Management System
+# 🚦 Smart Traffic & Parking Management System
 
 AI-Powered Adaptive Traffic Control & Parking Intelligence for Smart Cities
 
-📌 Problem Statement
+---
 
-Urban cities face severe traffic congestion, inefficient signal timing, and illegal roadside parking issues. Traditional traffic systems operate on fixed timers and lack real-time adaptability.
+## 📌 Problem Statement
 
-This project proposes an AI-powered Smart Traffic & Parking Management System that dynamically optimizes traffic signals and detects parking violations using computer vision.
+Urban areas face increasing traffic congestion, inefficient fixed-time signals, and illegal roadside parking. Traditional traffic systems lack real-time monitoring and adaptive decision-making, leading to longer waiting times, fuel wastage, and higher emissions.
 
-🎯 Objective
+This project introduces an **AI-powered Smart Traffic & Parking Management System** that uses computer vision and real-time analytics to optimize traffic signals and manage parking violations efficiently.
 
-To design and develop an intelligent traffic system that:
+---
 
-Detects vehicles in real time
+## 🎯 Objective
 
-Analyzes lane-wise traffic density
+To design and develop an intelligent system that:
 
-Optimizes signal timing dynamically
+* Detects vehicles in real time
+* Calculates lane-wise traffic density
+* Dynamically adjusts traffic signal timings
+* Detects illegal roadside parking
+* Improves traffic flow and road safety
 
-Detects illegal roadside parking
+---
 
-Improves overall traffic flow and road safety
+## 🧠 Key Features
 
-🧠 Key Features
+* 🚗 Real-time vehicle detection
+* 📊 Multi-class vehicle counting & classification
+* 🚦 Density-based adaptive signal control
+* 🅿️ Illegal parking detection
+* 📡 Live monitoring dashboard
+* 🚑 Emergency vehicle prioritization
 
-🚗 Real-time vehicle detection
+---
 
-📊 Multi-class vehicle counting
+## 🏗️ System Architecture
 
-🚦 Density-based signal optimization
-
-🅿️ Illegal parking detection
-
-📡 Live monitoring dashboard
-
-🚑 Emergency vehicle prioritization
-
-⚙️ System Architecture
+```
 Traffic Camera (Live Feed)
         ↓
-YOLOv8 – Vehicle Detection
+YOLOv8 – Real-Time Vehicle Detection
         ↓
-Vehicle Counting & Classification
+Multi-Class Vehicle Counting & Classification
         ↓
-Traffic Density Estimation
+Traffic & Parking Density Estimation
         ↓
-Dynamic Signal Optimization
+AI-Based Dynamic Signal Optimization
         ↓
-Smart Traffic Control System
+Smart Traffic & Parking Control System
+```
 
-🔍 Modules Description
-1️⃣ Vehicle Detection
+---
 
-Real-time vehicle detection using YOLOv8
+## 🔍 Module Explanation
 
-Tracks moving & stationary vehicles
+### 1️⃣ Vehicle Detection (YOLOv8)
 
-Classifies cars, bikes, buses, trucks, etc.
+* Detects moving & stationary vehicles
+* Classifies cars, bikes, buses, trucks, etc.
+* Works in real time using CCTV feeds
 
-2️⃣ Traffic Density Estimation
+---
 
-Calculates lane-wise vehicle count
+### 2️⃣ Traffic Density Estimation
 
-Detects congestion levels
+* Calculates vehicle count per lane
+* Identifies congestion levels
+* Detects peak traffic zones
 
-Identifies peak traffic zones
+---
 
-3️⃣ Dynamic Signal Optimization
+### 3️⃣ Dynamic Signal Optimization
 
-Allocates green time based on density
+* Allocates green signal time proportionally
+* Reduces unnecessary waiting time
+* Adjusts signals during congestion
 
-Reduces unnecessary waiting time
+---
 
-Adjusts signals during congestion
+### 4️⃣ Parking Intelligence Module
 
-4️⃣ Parking Intelligence Module
+* Detects illegal roadside parking
+* Identifies parking-induced congestion
+* Generates parking heatmaps for authorities
 
-Detects illegal roadside parking
+---
 
-Identifies congestion caused by parking
+### 5️⃣ Monitoring & Control Dashboard
 
-Generates parking heatmaps
+* Live traffic visualization
+* Signal timing control panel
+* System analytics & reports
 
-5️⃣ Monitoring Dashboard
+---
 
-Live traffic visualization
+## 🛠️ Tech Stack
 
-Signal timing control
+### 💻 Software
 
-Analytics & reports
+* Python
+* YOLOv8 (Object Detection Model)
+* OpenCV
+* Flask (Web Dashboard)
 
-🛠️ Tech Stack
-💻 Software
+### 🔧 Hardware
 
-Python
+* CCTV Cameras
+* Edge AI Device (Jetson Nano / GPU System)
+* Traffic Signal Controller
 
-YOLOv8 (Object Detection)
+---
 
-OpenCV
+## 🌍 Impact & Benefits
 
-Flask (Dashboard Backend)
+* ⏱️ Reduced waiting time at signals
+* ⛽ Lower fuel consumption
+* 🌱 Reduced carbon emissions
+* 🚑 Faster emergency response
+* 😊 Improved public satisfaction
+* 🚓 Better traffic law enforcement
 
-🔧 Hardware
+---
 
-CCTV Cameras
+## 📊 Feasibility
 
-Edge AI Device (Jetson Nano / GPU)
+**Cost Feasibility**
+Utilizes existing CCTV infrastructure → Cost-effective & scalable
 
-Traffic Signal Controller
+**Implementation Feasibility**
+Based on AI, Computer Vision & Edge Computing
 
-🌍 Impact & Benefits
+**Communication Feasibility**
+Low-latency wired/wireless transmission for real-time monitoring
 
-⏱️ Reduced waiting time at signals
+---
 
-⛽ Lower fuel consumption
+## ⚠️ Challenges & Solutions
 
-🌱 Reduced carbon emissions
+| Challenges              | Solutions                        |
+| ----------------------- | -------------------------------- |
+| Poor weather visibility | AI image enhancement & filtering |
+| Network instability     | Edge processing & buffering      |
+| Power interruptions     | Backup power systems             |
 
-🚑 Emergency vehicle priority
+---
 
-😊 Improved public satisfaction
+## 🔮 Future Enhancements
 
-🚓 Better traffic law enforcement
+* Traffic prediction using LSTM
+* Emergency green corridor automation
+* Accident detection system
+* City-wide analytics dashboard
+* Intersection data communication
 
-📊 Feasibility
+---
 
-Cost Feasibility
-Uses existing CCTV infrastructure → Cost-effective deployment
+## 📸 Project Screenshots
 
-Implementation Feasibility
-AI + Computer Vision + Edge Computing
+---
 
-Communication Feasibility
-Low-latency wired/wireless data transfer
+## 📚 Research References
 
-⚠️ Challenges
+* IEEE – Intelligent Traffic Signal Control
+* Smart City ITS Reports – Government of India
+* YOLOv8 Official Documentation
+* MDPI Traffic Management Research
 
-Poor weather visibility (rain/fog)
+---
 
-Network instability
+## 👥 Team Details
 
-Power supply interruptions
+**Team Name:** The Visioners
+**Hackathon:** SAMVED Hackathon 2026
+**Problem Statement ID:** PS-005
+**Theme:** Smart Traffic & Parking Management System
 
-Solutions
+---
 
-AI image enhancement
 
-Edge processing
-
-Backup power systems
-
-🔮 Future Enhancements
-
-Traffic prediction using LSTM
-
-Emergency green corridors
-
-Accident detection system
-
-City-wide analytics dashboard
-
-Intersection-to-intersection communication
-
-📸 Project Screenshots
-
-Add your images like this:
-
-![Dashboard](images/dashboard.png)
-![Vehicle Detection](images/detection.png)
-
-📚 Research References
-
-IEEE Intelligent Traffic Signal Control
-
-Smart City ITS Reports – Government of India
-
-YOLOv8 Documentation
-
-MDPI Traffic Management Studies
-
-(You can paste actual links here)
-
-👥 Team Details
-
-Team Name: The Visioners
-Hackathon: SAMVED Hackathon 2026
-Problem ID: PS-005
-Theme: Smart Traffic & Parking Management
