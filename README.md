@@ -158,10 +158,10 @@ Low-latency wired/wireless transmission for real-time monitoring
 
 ## 📸 Project Screenshots
 
-system.architecture1.jpg
-system.architecture2.jpg
-system.architecture3.jpg
-system.architecture4.jpg
+![Screenshot](images/system.architecture1.jpg)
+![Screenshot](images/system.architecture2.jpg)
+![Screenshot](images/system.architecture3.jpg)
+![Screenshot](images/system.architecture4.jpg)
 
 
 ---
